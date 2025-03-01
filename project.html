@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00ff00;
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+            margin-right: 110px;
+        }
+
+        .links a {
+            font-size: 1.2rem;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: 550;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .links a:hover {
+            background: #008000;
+            color: white;
+        }
+
+        .projects-container {
+            margin-top: 12vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 255, 0, 0.5);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 25px rgba(0, 255, 0, 0.7);
+        }
+
+        .project-title {
+            font-size: 2rem;
+            color: #00ff00;
+            margin: 20px 0;
+        }
+
+        .project-desc {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .project-btn {
+            background: #00ff00;
+            color: black;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #008000;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Balakrishnan I</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="projects-container">
+        <div class="project-card">
+            <h2 class="project-title">Reminder App</h2>
+            <p class="project-desc">The Reminder App is a web-based application built using HTML, CSS, JavaScript, Django, MySQL, and Python. It helps users create, manage, and track their reminders efficiently. Users can set reminders for tasks, appointments, or events and receive notifications when due.</p>
+            <ul style="text-align: left; font-size: 1.1rem; color: white; margin-bottom: 15px;">
+                <li>✅  User Authentication – Secure login and logout functionality</li>
+                <li>✅ Add, Edit, Delete Reminders – Users can manage their reminders easily</li>
+                <li>✅ Database Management – Store and retrieve reminders using MySQL</li>
+                <li>✅ Django Backend – Handles data processing and business logic</li>
+                <li>✅ REST API Support – Can integrate with other apps (if required)</li>
+            </ul>
+            <button class="project-btn" onclick="window.location.href='https://messihannah.pythonanywhere.com/login/?next=/'">View Project</button>
+        </div>
+        
+        <div class="project-card">
+            <h2 class="project-title">E-Commerce Website</h2>
+            <p class="project-desc">A feature-rich e-commerce website using Django, MySQL, HTML, CSS, and JavaScript. Users can browse products, add them to the cart, and place orders with a seamless experience.</p>
+            <ul style="text-align: left; font-size: 1.1rem; color: white; margin-bottom: 15px;">
+                <li>✅ User registration and secure authentication</li>
+                <li>✅ Product listing with search and filter functionality</li>
+                <li>✅ Shopping cart and wishlist management</li>
+                <li>✅ Order placement, payment integration, and tracking</li>
+                <li>✅ Admin dashboard for managing products, users, and orders</li>
+                <li>✅ Reviews and ratings for products</li>
+                
+            </ul>
+            <button class="project-btn" onclick="window.location.href='https://srihannah.pythonanywhere.com/'">View Project</button>
+        </div>
+        
+
+        <div class="project-card">
+            <h2 class="project-title">Anime Streaming App</h2>
+            <p class="project-desc">The Anime World project is a dynamic web application that combines several interactive features using only HTML, CSS, and JavaScript. Key features of the project include:</p>
+            <ul style="text-align: left; font-size: 1.1rem; color: white; margin-bottom: 15px;">
+                <li>✅ Stream App: A section where users can view anime streaming content or links to different anime shows. This could include embedded videos or external streaming links.</li>
+                <li>✅ Gallery: A section displaying various anime images or posters, where users can browse through a collection of anime visuals in a grid layout.</li>
+                <li>✅ Typing Game: An engaging typing game that challenges users to type anime-related words or phrases quickly and accurately. The game tracks typing speed and accuracy to provide an interactive, fun experience for users.</li>
+                
+            </ul>
+            <button class="project-btn" onclick="window.location.href='https://srihannah.github.io/anime/'">View Project</button>
+        </div>
+        
+    </section>
+</body>
+</html>
